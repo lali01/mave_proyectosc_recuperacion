@@ -54,6 +54,11 @@ public class Poliza extends Main{
 		return "Poliza [nombre=" + nombre + ", categoria=" + categoria + ", descripcion=" + descripcion + ", beneficio="
 				+ beneficio + "]";
 	}
+
+	public static Object get(int i) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 }

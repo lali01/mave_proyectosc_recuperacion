@@ -68,9 +68,11 @@ String nombre = "";
 				System.out.println("****************************");
 				System.out.println("Ingresar el nombre: ");
 				String nombre1 = in.nextLine();
-				boolean resultado = false;
 
 				for (int i = 0; i < 50; i++) {
+					String busquedaNombre = Poliza.get(i).getEstado
+						if(busquedaNombre.equals(Poliza.get(i).getNombre())
+						
 					Poliza poliza = listaPoliza[i];
 					nombre = poliza.getNombre();
 					boolean resultado2 = buscar.equals(nombre1);
@@ -78,6 +80,12 @@ String nombre = "";
 					if (resultado == true) {
 						resultado = true;
 					}
+					//estadoBusqueda = listaLibros.get(1).getEstado
+					//busquedaCodigo.equals(listaLibros.get(1).getCodigo())
+					//&& busquedaCedula==listaLibros.get(1).getCedula()
+					//&& estadoBusqueda==listaLibros.get(1).getEstado()
+					//system.out.println(listaLibros.get(1).toString2());
+					
 				}
 				if (resultado == true) {
 					System.out.println("Poliza Encontrada: ");
