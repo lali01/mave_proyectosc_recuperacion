@@ -19,6 +19,7 @@ public class Poliza extends Main{
 		// TODO Auto-generated constructor stub
 	}
 
+
 	public Poliza(String string) {
 		// TODO Auto-generated constructor stub
 	}
@@ -58,6 +59,11 @@ public class Poliza extends Main{
 	public static Object get(int i) {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	public boolean contains(String nombre2) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 	
 	

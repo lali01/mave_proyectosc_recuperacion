@@ -1,5 +1,4 @@
 package recuperacion;
-
 import java.util.Scanner;
 import java.util.Arrays;
 
@@ -10,17 +9,19 @@ public class Main {
 
 		Scanner in = new Scanner(System.in);
 		Scanner inInt = new Scanner(System.in);
-
+		
+		
 		String opcion = "";
 		String categoria = "";
 		String descripcion = "";
 		String beneficio = "";
 		String nombreABuscar = "";
 		int posicion = 0;
-		String buscar = "";
-String nombre = "";
+		String nombre = "";
+		
 		Poliza listaPoliza[] = new Poliza[50];
-
+		
+	
 		do {
 			System.out.println("Elija una Opcion: ");
 			System.out.println("1. Ingresar Poliza ");
@@ -46,7 +47,7 @@ String nombre = "";
 					String codigo = in.next();
 				}
 				System.out.println("3. Ingrese descripcion: ");
-				descripcion = in.nextLine();
+				descripcion = in.next();
 				System.out.println("4. Ingresar el beneficio: ");
 				beneficio = in.nextLine();
 				System.out.println("****************************");
@@ -67,36 +68,31 @@ String nombre = "";
 			case "2":
 				System.out.println("****************************");
 				System.out.println("Ingresar el nombre: ");
-				String nombre1 = in.nextLine();
-
-				for (int i = 0; i < 50; i++) {
-					String busquedaNombre = Poliza.get(i).getEstado
-						if(busquedaNombre.equals(Poliza.get(i).getNombre())
-						
+				nombreABuscar = in.nextLine();
+				for (int i = 0; i<50; i++) {
 					Poliza poliza = listaPoliza[i];
-					nombre = poliza.getNombre();
-					boolean resultado2 = buscar.equals(nombre1);
-				
-					if (resultado == true) {
-						resultado = true;
-					}
-					//estadoBusqueda = listaLibros.get(1).getEstado
-					//busquedaCodigo.equals(listaLibros.get(1).getCodigo())
-					//&& busquedaCedula==listaLibros.get(1).getCedula()
-					//&& estadoBusqueda==listaLibros.get(1).getEstado()
-					//system.out.println(listaLibros.get(1).toString2());
 					
-				}
-				if (resultado == true) {
-					System.out.println("Poliza Encontrada: ");
-					System.out.println(Arrays.toString(listaPoliza));
-				} else {
-					System.out.println("Estudiante No encontrado");
+					nombreABuscar.equals(nombre);
+					
+				boolean resultado = poliza.contains(nombreABuscar);
+				System.out.println("Poliza Encontrada: " + Arrays.toString(listaPoliza));
+				
+//					if(nombreABuscar.equals(listaPoliza)){
+//						System.out.println("Poliza Encontrada: ");
+//						System.out.println(Arrays.toString(listaPoliza));
+//				
+//						}else {
+//							System.out.println("Nombre no encontrado");
+				
 				}
 				break;
 			}
-		} while (!opcion.equals("3"));
+				
+		}while(!opcion.equals("3"));
 		System.out.println("Usted ha salido del sistema");
 		System.out.println("BUEN DIA");
-	}
-}
+		
+		}
+		}
+	
+
